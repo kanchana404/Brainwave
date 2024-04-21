@@ -16,6 +16,7 @@ const App = () => {
           <Benifits/>
           <Collaboration/>
           <Services/>
+          
       </div>
       <ButtonGradient/>
 
