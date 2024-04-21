@@ -3,7 +3,7 @@ import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
 import { brainwaveServices, brainwaveServicesIcons } from "../Constents";
 import {
-  PhotoChatMessage,
+  PhotChatMessage,
   Gradient,
   VideoBar,
   VideoChatMessage,
@@ -73,17 +73,15 @@ const Services = () => {
                 </p>
               </div>
 
-              <PhotoChatMessage />
+              <PhotChatMessage />
             </div>
-
-            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
+            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min=h[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Video Generation</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
                   The world’s most powerful AI photo and video art generation
                   engine. What will you create?
                 </p>
-
                 <ul className="flex items-center justify-between">
                   {brainwaveServicesIcons.map((item, index) => (
                     <li
@@ -101,29 +99,26 @@ const Services = () => {
                             : ""
                         }
                       >
-                        <img src={item} width={24} height={24} alt={item} />
+                        <img src={item} alt="icon" />
                       </div>
                     </li>
                   ))}
                 </ul>
               </div>
-
               <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                 <img
                   src={service3}
                   className="w-full h-full object-cover"
+                  alt="service3"
                   width={520}
                   height={400}
-                  alt="Scary robot"
                 />
-
-                <VideoChatMessage />
-                <VideoBar />
+                <VideoChatMessage/>
+                <VideoBar/>
               </div>
             </div>
           </div>
-
-          <Gradient />
+          <Gradient/>
         </div>
       </div>
     </Section>
