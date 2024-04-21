@@ -13,7 +13,7 @@ import Generating from "./Generating";
 
 const Services = () => {
   return (
-    <Section id="how-to-use">
+    <Section id="how-to-use" className="overflow-hidden">
       <div className="container">
         <Heading
           title="Generative AI made for creators."
@@ -43,7 +43,7 @@ const Services = () => {
                     key={index}
                     className="flex items-start py-4 border-t border-n-6"
                   >
-                    <img width={24} height={24} src={check} />
+                    <img width={24} height={24} src={check} alt="Check" />
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
@@ -61,25 +61,25 @@ const Services = () => {
                   className="h-full w-full object-cover"
                   width={630}
                   height={750}
-                  alt="robot"
+                  alt="Photo editing"
                 />
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
                 <h4 className="h4 mb-4">Photo editing</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                  Automatically enhance your photos using our AI app's photo
+                  editing feature. Try it now!
                 </p>
               </div>
 
               <PhotChatMessage />
             </div>
-            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min=h[46rem]">
+            <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
                 <h4 className="h4 mb-4">Video Generation</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
+                  The world's most powerful AI photo and video art generation
                   engine. What will you create?
                 </p>
                 <ul className="flex items-center justify-between">
@@ -109,16 +109,16 @@ const Services = () => {
                 <img
                   src={service3}
                   className="w-full h-full object-cover"
-                  alt="service3"
+                  alt="Video generation"
                   width={520}
                   height={400}
                 />
-                <VideoChatMessage/>
-                <VideoBar/>
+                <VideoChatMessage />
+                <VideoBar />
               </div>
             </div>
           </div>
-          <Gradient/>
+          <Gradient />
         </div>
       </div>
     </Section>

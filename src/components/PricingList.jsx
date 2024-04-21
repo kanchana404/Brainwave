@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const PricingList = () => {
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap">
+    <div className="flex gap-[1rem] max-lg:flex-wrap overflow-hidden">
       {pricing.map((item) => (
         <div
           key={item.id}
